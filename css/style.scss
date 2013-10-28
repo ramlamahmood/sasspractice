@@ -1,0 +1,70 @@
+$color1: #71D0C8;
+$color2: #732637;
+$color3: #D69485;
+$color4: #EAF5E0;
+$colorbg: #FBFBFE;
+$myradius: 14px;
+$x: 10px;
+$y: 10px;
+$blur: 10px;
+$color: #732658;
+
+@mixin borderRadius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin boxShadow($x, $y, $blur, $color){
+	-webkit-box-shadow:  $x $y $blur $color;
+	-moz-box-shadow:     $x $y $blur $color;
+}
+
+body{
+	background-color: $colorbg;
+}
+
+.container{
+	width: 450px;
+	height: 450px;
+	margin: 0 auto;
+	position: absolute;
+	top:20%;
+    left:34%;
+}
+
+.container div{
+	width: 200px;
+	height: 200px;
+	float: left;
+	background-color: blue;
+	margin: 10px;
+}
+
+.container div:nth-child(1) {
+	background-color: $color1;
+	@include borderRadius($myradius);
+	@include boxShadow($x, $y, $blur, $color);
+ 
+}
+
+.container div:nth-child(2) {
+	background-color: $color2;
+	@include borderRadius($myradius);
+	@include boxShadow($x, $y, $blur, $color);
+	 
+}
+
+.container div:nth-child(3) {
+	background-color: $color3;
+	@include borderRadius($myradius);
+	@include boxShadow($x, $y, $blur, $color);
+	 
+}
+
+.container div:nth-child(4) {
+	background-color: $color4;
+	@include borderRadius($myradius);
+	@include boxShadow($x, $y, $blur, $color);
+}
+

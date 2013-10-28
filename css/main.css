@@ -1,0 +1,49 @@
+body {
+  background-color: #fbfbfe; }
+
+.container {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  left: 34%; }
+
+.container div {
+  width: 200px;
+  height: 200px;
+  float: left;
+  background-color: blue;
+  margin: 10px; }
+
+.container div:nth-child(1) {
+  background-color: #71d0c8;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  -webkit-box-shadow: 10px 10px 10px #732658;
+  -moz-box-shadow: 10px 10px 10px #732658; }
+
+.container div:nth-child(2) {
+  background-color: #732637;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  -webkit-box-shadow: 10px 10px 10px #732658;
+  -moz-box-shadow: 10px 10px 10px #732658; }
+
+.container div:nth-child(3) {
+  background-color: #d69485;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  -webkit-box-shadow: 10px 10px 10px #732658;
+  -moz-box-shadow: 10px 10px 10px #732658; }
+
+.container div:nth-child(4) {
+  background-color: #eaf5e0;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  -webkit-box-shadow: 10px 10px 10px #732658;
+  -moz-box-shadow: 10px 10px 10px #732658; }
