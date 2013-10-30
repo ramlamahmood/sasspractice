@@ -68,3 +68,6 @@ body{
 	@include boxShadow($x, $y, $blur, $color);
 }
 
+#whoa {
+	position: fixed;
+}
