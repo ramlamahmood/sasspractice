@@ -10,21 +10,13 @@ body{
 	background-color: $colorbg;
 }
 
-.panel {
-	min-height: 100%;
-	position: fixed;
+#title {
+	height: 100%;
 	width: 100%;
+	position: fixed;
+	z-index: 500;
 	h1 {
-		margin: 0;
 		padding: 0;
-	}
-}
-
-.panel:nth-of-type(1) {
-	background-color: black;
-	// position: fixed;
-	z-index: 3;
-	h1 {
 		padding-top: 23%;
 		color: white;
 		width: 100%;
@@ -32,17 +24,35 @@ body{
 		font-family: 'Abril Fatface', cursive;
 		font-weight: 400;
 		font-size: 60px;
+		margin: 0;
+	}
+	@include boxShadow(0px, 4px, 4px, rgba(0,0,0,.5));
+}
+
+.panel {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+
+	h1 {
+		margin: 0;
+		padding: 0;
 	}
 }
 
 .panel:nth-of-type(2) {
-	background-color: blue;
+	background-color: white;
 	z-index: 2;
 }
 
 .panel:nth-of-type(3) {
 	background-color: pink;
 	z-index: 1;
+	h1 {
+		padding-top: 23%;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .container{
